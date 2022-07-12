@@ -44,6 +44,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
+    clearStatusClass(document.body)
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
@@ -66,7 +67,6 @@ function selectAnswer(e) {
         console.log(shuffledQuestions)
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
-        nextButton.classList.add('hide')
     }
 }
 
