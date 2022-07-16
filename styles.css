@@ -21,8 +21,18 @@ body {
     background-color: hsl(var(--hue), 100%, 20%);
 }
 
+.question-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .question {
     color: black;
+}
+
+.score {
+    min-width: 160px;
 }
 
 .hue-correct {
@@ -53,16 +63,15 @@ body {
 
 .btn:hover {
     border-color: rgb(200, 200, 200);
+    cursor: pointer;
 }
 
 .btn-correct {
     --hue: var(--hue-correct);
-    color: white;
 }
 
 .btn-wrong {
     --hue: var(--hue-wrong);
-    color: white;
 }
 
 .btn-grid {
